@@ -1,0 +1,170 @@
+@import "tailwindcss";
+@import "./styles/scrollbar-utils.css";
+
+:root {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Ensure scrollbars respect container boundaries */
+.overflow-auto, .overflow-y-auto, .overflow-x-auto {
+  scrollbar-gutter: stable;
+}
+
+/* Unified Scrollbar System - Fits within containers and curves */
+
+/* Default scrollbar for all elements */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(14, 165, 233, 0.3) transparent;
+}
+
+/* Webkit scrollbar base styles */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+  margin: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.3);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.5);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(14, 165, 233, 0.7);
+}
+
+/* Corner styling for both scrollbars */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Thin scrollbar variant */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.2);
+  border-radius: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.4);
+}
+
+/* Modal/Container scrollbar - fits within rounded containers */
+.scrollbar-modal::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-modal::-webkit-scrollbar-track {
+  background: rgba(241, 245, 249, 0.5);
+  border-radius: 10px;
+  margin: 8px 2px;
+}
+
+.scrollbar-modal::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.4);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-clip: padding-box;
+}
+
+.scrollbar-modal::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.6);
+}
+
+/* Table scrollbar - optimized for data tables */
+.scrollbar-table::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scrollbar-table::-webkit-scrollbar-track {
+  background: rgba(248, 250, 252, 0.8);
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.scrollbar-table::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.3);
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-clip: padding-box;
+}
+
+.scrollbar-table::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.5);
+}
+
+/* Invisible scrollbar but still functional */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dark theme scrollbar */
+.scrollbar-dark::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.3);
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.6);
+}
+
+/* Curved container scrollbar - fits within rounded elements */
+.scrollbar-curved::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.scrollbar-curved::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 12px;
+  margin: 12px 3px;
+}
+
+.scrollbar-curved::-webkit-scrollbar-thumb {
+  background: rgba(14, 165, 233, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-clip: padding-box;
+}
+
+.scrollbar-curved::-webkit-scrollbar-thumb:hover {
+  background: rgba(14, 165, 233, 0.4);
+}

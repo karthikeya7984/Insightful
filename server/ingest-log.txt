@@ -1,0 +1,8 @@
+Starting Detailed Test...
+[LOG] 🚀 Starting Ingestion Test...
+[LOG] Connected to MongoDB
+[ERROR] Gemini JSON Generation Error: {"status":404,"statusText":"Not Found"}
+[ERROR] Ingest Error: {"status":404,"statusText":"Not Found"}
+[LOG] Response Status: 500
+[LOG] DATA:  {"error":"Failed to ingest feedback"}
+[LOG] Ingestion Test Completed.
